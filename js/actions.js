@@ -23,25 +23,25 @@ var updateClock = function() {
         image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
         messageText = "Wow! Time to wake up!";
     } else if (time < noon && time >= morning) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good morning, sunshine!";
     } else if (time >= partyTime && time < 15) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/party.jpg?raw=true";
         messageText = "PARTY! PARTY! PARTY!";
     } else if (time >= noon && time < 13) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/lunchtime.jpg?raw=true";
         messageText = "Lunch time!";
     } else if (time >= napTime && time < partyTime) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat3.jpg;"
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/naptime.jpg?raw=true;"
         messageText = "Yawn....naptime :)";
     } else if (time > noon && time < evening) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good afternoon!";
     } else if (time >= evening && time <= night) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good evening!";
     } else {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good night!";
     }
 
