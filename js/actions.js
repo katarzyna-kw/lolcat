@@ -20,7 +20,7 @@ var updateClock = function() {
     var lolcat = document.getElementById("lolcat");
 
     if (time >= 5 && time < 6) {
-        image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/wakeup.jpg?raw=true";
         messageText = "Wow! Time to wake up!";
     } else if (time < noon && time >= morning) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
