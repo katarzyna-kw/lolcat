@@ -96,12 +96,11 @@ footer p {
   font-family: "Open Sans";
   text-transform: uppercase;
   font-size: .8rem;
-  color: papayawhip;
   padding-top: 10px;
 }
 
 
 .light-mode {
-  background-color: lightcyan;
-
+  background-color: #e4b4e4;
+  color: #0E0E52;
 }

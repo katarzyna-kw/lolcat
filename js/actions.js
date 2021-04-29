@@ -129,3 +129,15 @@ var napEvent = function() {
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
 napTimeSelector.addEventListener('change', napEvent);
+
+var lightModeButton = document.querySelector(".light-mode");
+var theme = document.querySelector("body");
+
+lightModeButton.addEventListener("click", function () {
+    if (theme.classList.contains("light-mode")) {
+        theme.classList.remove("light-mode");
+    }
+    else {
+        theme.classList.add("light-mode");
+    }
+});
