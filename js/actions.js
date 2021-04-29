@@ -130,14 +130,16 @@ wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
 napTimeSelector.addEventListener('change', napEvent);
 
-var lightModeButton = document.querySelector(".light-mode");
+var modeButton = document.querySelector(".light-mode");
 var theme = document.querySelector("body");
 
-lightModeButton.addEventListener("click", function () {
+modeButton.addEventListener("click", function () {
     if (theme.classList.contains("light-mode")) {
         theme.classList.remove("light-mode");
+        modeButton.innerText = "Light Mode";
     }
     else {
         theme.classList.add("light-mode");
+        modeButton.innerText = "Dark Mode";
     }
 });
