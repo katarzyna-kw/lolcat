@@ -104,3 +104,7 @@ footer p {
   background-color: #e4b4e4;
   color: #0E0E52;
 }
+
+.light-mode #lolcat {
+  border:5px solid #0E0E52;
+}
