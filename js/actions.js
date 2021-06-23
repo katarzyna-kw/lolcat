@@ -1,37 +1,39 @@
 let time = new Date().getHours();
+let messageText;
 let morning = 4; //4am
 let wakeupTime = 5; //5am
 let noon = 12; //12pm
+let lunchTime = 12;
 let napTime = 13; //1pm
 let partyTime = 14; //2pm
 let evening = 18; //6pm
 let night = 21; //9pm
+
 let isPartyTime = false;
+
 const partyTimeButton = document.getElementById("partyTimeButton");
 const wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
 const lunchTimeSelector = document.getElementById("lunchTimeSelector");
 const napTimeSelector = document.getElementById("napTimeSelector");
 
-
 const updateClock = function() {
-    let image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
-    let messageText;
     let message = document.getElementById("timeEvent");
     let lolcat = document.getElementById("lolcat");
+    let image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
 
-    if (time >= 5 && time < 6) {
-        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/wakeup.jpg?raw=true";
+    if (time == wakeupTime) {
         messageText = "Wow! Time to wake up!";
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/wakeup.jpg?raw=true";
     } else if (time < noon && time >= morning) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good morning, sunshine!";
-    } else if (time >= partyTime && time < 15) {
+    } else if (time == partyTime) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/party.jpg?raw=true";
         messageText = "PARTY! PARTY! PARTY!";
-    } else if (time >= noon && time < 13) {
+    } else if (time == lunchTime) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/lunchtime.jpg?raw=true";
         messageText = "Lunch time!";
-    } else if (time >= napTime && time < partyTime) {
+    } else if (time == napTime) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/naptime.jpg?raw=true;"
         messageText = "Yawn....naptime :)";
     } else if (time > noon && time < evening) {
@@ -127,8 +129,11 @@ const napEvent = function() {
 }
 
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
+
 lunchTimeSelector.addEventListener('change', lunchEvent);
+
 napTimeSelector.addEventListener('change', napEvent);
+
 
 const modeButton = document.querySelector(".light-mode");
 const theme = document.querySelector("body");
