@@ -24,9 +24,6 @@ const updateClock = function() {
     if (time == wakeupTime) {
         messageText = "Wow! Time to wake up!";
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/wakeup.jpg?raw=true";
-    } else if (time < noon && time >= morning) {
-        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
-        messageText = "Good morning, sunshine!";
     } else if (time == partyTime) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/party.jpg?raw=true";
         messageText = "PARTY! PARTY! PARTY!";
@@ -36,6 +33,9 @@ const updateClock = function() {
     } else if (time == napTime) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/naptime.jpg?raw=true;"
         messageText = "Yawn....naptime :)";
+    } else if (time < noon && time >= morning) {
+        image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
+        messageText = "Good morning, sunshine!";
     } else if (time > noon && time < evening) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good afternoon!";
