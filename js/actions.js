@@ -32,7 +32,7 @@ const updateClock = function() {
         messageText = "Lunch time!";
     } else if (time == napTime) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/naptime.jpg?raw=true;"
-        messageText = "Yawn....naptime :)";
+        messageText = "Yawn....naptime 😺";
     } else if (time < noon && time >= morning) {
         image = "https://github.com/katarzyna-kw/lolcat/blob/main/images/default.jpg?raw=true";
         messageText = "Good morning, sunshine!";
