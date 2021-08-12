@@ -70,7 +70,7 @@ const showCurrentTime = function()
     if (hours >= noon) 
     { 
         meridian = "PM"; 
-    }  
+    } 
     if (hours > noon) 
     { 
         hours = hours - 12; 
